@@ -24,7 +24,7 @@ body {
   .topnav h2.center {
     color: #670808;
     font-family:'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 30px;
   }
   .main {
     position: relative;
@@ -82,7 +82,7 @@ body {
     width: 100%;
     display: flex;
     margin-left: 1%;
-    
+   height: 90vh; 
   }
 .foot{
     display: flex;
