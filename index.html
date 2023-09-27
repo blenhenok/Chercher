@@ -3,48 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Chercher Restaurant</title>
+    <title>Chercher</title>
 </head>
 <body>
-    <div class="topnav">
-        <a herf="menu.html"> MENU</a>
-        <h2 class="center"> Chercher Restaurant</h2>
-        <a herf="about.html">ABOUT US</a>
-    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Chercher</a>
+        <a href="menu.html" class="add">MENU</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div class="main">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/c1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/c2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/c3.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
 
-    <div class="main">
-  <img class="Slides" src="p3.jpg" >
-  <img class="Slides" src="p4.jpg" >
-  <img class="Slides" src="p5.jpg" >
-  <img class="Slides" src="p6.jpeg">
-  
-  <button class="leftbtn" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="rightbtn" onclick="plusDivs(1)">&#10095;</button>
-</div>
+        <div class="mid">
+            <h2> OUR STORY</h2>
+            <p>Our restaurant brings the authentic flavours of Ethiopia to your plate. We pride ourselves on using fresh and high-quality ingredients to give you a true taste of Ethiopian cusine including vegan and vegiterian options.We are a family-owned and operated restaurant. Our mission is to provide our customers with a memorable dining experience that showcases the culture and flavors of Ethiopia.<br>
+                 <a class="menmid" href="menu.html"> view our menu &#8594 </a></p>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+              <a href="#home"><img src="images/p3.jpg" alt="Snow" style="width:100%"></a>
+              <h3>populars</h3>
+            </div>
+            <div class="column">
+              <a href="#home"><img src="images/p13.jpg" alt="Snow" style="width:100%"></a>
+              <h3>Appetizers</h3>
+            </div>
+            <div class="column">
+              <a href="#home"><img src="images/c3.jpg" alt="Snow" style="width:100%"></a>
+              <h3>vegan</h3>
+            </div>
+            </div>
 
-<div class="mid">
-    <h2 class="midh2">Our Story</h2>
-    <p>our place is a place where you can enjoy the rich and diverse flavors of Ethiopia in a cozy and welcoming atmosphere. Whether you are vegan, vegetarian, gluten-free, or a meat lover, you will find something to satisfy your taste buds from our menu of traditional dishes. Try our injera, a sourdough flatbread that is used to scoop up stews and salads, or our kitfo, a spicy minced beef dish that is served raw or cooked. You can also sample our coffee, which is roasted and brewed in front of you, or our tej, a honey wine that is fermented with gesho leaves. </p>
-    <a href="menu.html">View our menu &#8594</a>
-</div>
 
-<div class="cofpic">
-    <img style="width: 49%;" src="p1.jpg">
-    <img style="width: 49%;"src="p2.jpg">
-</div>
+        <div class="foot">
+            <div class="adres">
+                <p>93 Irving st. | footscray VIC 3011 | Australia</p>
+                <p>Wednesday-Monday, 10an-10pm | Tuesday, 9am-5pm</p>
+            </div>
+            <div class="cont">
+                <p>+61 470 207 860</p>
+                <p>+61 410 092 792</p>
+            </div>
+        </div>
 
-<div class="foot">
-    <div class="adres">
-        <p>93 Iriving st. | footscray VIC 3011 | Australia</p>
-        <p>Wednesday - Monday, 10am-10pm | Tuesday, 9am-5pm</p>
-    </div>
-    <div class="cont">
-        <p>+61 470 207 860</p>
-        <p>+61 410 092 792</p>
-    </div>
-</div>
-
-<script src="function.js"></script>
+      <script src="function.js"></script>
 </body>
 </html>

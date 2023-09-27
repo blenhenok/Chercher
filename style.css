@@ -1,98 +1,177 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d3cab0;
-  }
-  
-  .topnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(to right, white, rgb(226, 226, 142), white);
-    overflow: hidden;
-  }
-  
-  .topnav a {
-    color: #100f0d;
-    text-decoration: none;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  .topnav h2.center {
-    color: #670808;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 30px;
-  }
-  .main {
-    position: relative;
-    width: 98%;
-    margin-left: 1%;
-    margin-bottom: 5%;
-  }
-  .Slides {
-    display: none;
-    width: 100%;
-  }
-  
-  .leftbtn, .rightbtn {
-    color: white;
-    background-color: rgba(0,0,0,0.5);
-    transform: translateY(-50%);
-    border: none;
-    cursor: pointer;
-    padding: 16px;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-  }
-  
-  .leftbtn {
-    left: 0;
-  }
-  
-  .rightbtn {
-    right: 0;
-  }
-  
-  .mid {
-    position: absolute;
-    margin-left: 20%;
-    top: 120%;
-    width: 60%;
-    background-color:#e0c471;
-    color: rgb(14, 13, 13);
-    padding-bottom: 3%;
-  }
-  
-  .midh2 {
-    text-align: center;
-  }
-  .mid p{
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-  .mid a{
-    font-size: larger;
-    padding-left: 40%;
-  }
-  .cofpic{
-    width: 100%;
-    display: flex;
-    margin-left: 1%;
-   height: 90vh; 
-  }
-.foot{
-    display: flex;
-    justify-content: space-between;
-    background-color: grey;
-    padding: 1px 1px;
+  padding: 0;
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color:beige;
+  color: #decdcd;
 }
-  .adres{
-    margin-left: 8%;
+
+.topnav {
+  overflow: hidden;
+  background-color: #701515;
+}
+
+.topnav a {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-left: 7%;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: bold;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #7c2b2b;
+  color: white;
+  font-size: 25px;
+  font-family: cursive;
+  width: 20%;
+  
+}
+.topnav a.add{
+  padding-left: 7%;
+}
+
+.topnav .icon {
+  display: none;
+  padding: 13px 8px;
+}
+
+
+.mySlides {display: none;}
+
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  min-width: 95%;
+}
+.main{
+  background-color:#cc9d9d;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2cc;
+  font-size: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mid{
+  width: 80%;
+  background-color: #cc9d9d;
+  padding-left: 5%;
+  padding-bottom: 6%;
+  padding-top: 1%;
+  padding-right: 3%;
+  display: flex;
+  color: black;
+}
+.mid p{
+  padding-left: 7%;
+}
+.mid h3{
+  font-weight: bold ;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #4a0e0e;
+  bottom: 0;
+  width: 100%;
+}
+.row {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@keyframes fade {
+  from {opacity: 0.9} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  .cont{
-    margin-right: 8%;
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  .column {
+    width:90%;
+    padding-top: 2%;
+    padding-bottom: 1%;;
+  }
+  
+
+}

@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
