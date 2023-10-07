@@ -109,6 +109,30 @@ body{
     left:50%;
     transform: translateX(-50%);
 }
+ .menulinks{
+  float:center;
+  display: flex;
+  flex-direction: row;
+  padding-right: 4%;
+}
+ .menulinks a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.menulinks a.active {
+  background-color: #031710;
+  color: rgb(73, 8, 8);
+}
+.menulinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
 .menu{
     display: flex;
     justify-content: space-between;
