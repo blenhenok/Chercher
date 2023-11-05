@@ -2,13 +2,15 @@
     overflow: hidden;
     background-color: #333;
   }
+  .logo{
+    width: 20%;
+  }
   
-  .topnav .logo {
+  .logo img{
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 1.5em;
+    max-width: 75%;
+    height: auto;
+    padding: 10px 10px 10px 30px;
   }
   .topnav .links{
     float:right;
@@ -28,6 +30,53 @@
     background-color: #ddd;
     color: black;
    }
+   .whole{
+    text-align: center;
+    width:100%;
+   }
+   .whole .toppart{
+    background-image: url('images/c2.jpg');
+   }
+  .whole h2{
+    text-transform: capitalize;
+    font-size: 25px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 1px;
+   }
+   .whole h2::before{
+    content: '';
+    position: absolute;
+    width:90px;
+    height:3px;
+    background-color: aqua;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    }
+   .whole h4{
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4%;
+   }
+   .content{
+    display: flex;
+    flex-wrap: wrap;
+    font-style: italic;
+    }
+   .content ul li {
+    font-size: larger;
+    text-align: left; 
+    list-style-type: none;
+    padding-right: 1%;
+   }
+   .content ul li h3{
+   color: rgb(235, 85, 16);
+   }
+
 
    @media screen and (max-width: 768px) {
     *{
@@ -44,9 +93,13 @@
     
     .logo {
       display: block;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 1.5em;
+      width: 80%;
+    }
+    .logo img{
+      float: center;
+      max-width: 60%;
+      height: auto;
+      padding-left: 30%;
     }
     
     .topnav {
@@ -71,4 +124,51 @@
       background-color: #ddd;
       color: black;
     }
+    .whole{
+      text-align: center;
+      margin:5%;
+      width: 100%;
+  }
+  .whole h2{
+      text-transform: capitalize;
+      font-size: 120%;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 1%;
+  }
+  .whole h2::before{
+      content: '';
+      position: absolute;
+      width:100%;
+      height:2px;
+      background-color: aqua;
+      bottom:0;
+      left:50%;
+      transform: translateX(-50%);
+  }
+  .whole h4{
+      text-transform: capitalize;
+      font-size: 110%;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 3%;
+  }
+  .content{
+      display: flex;
+      flex-wrap: wrap;
+      
+  }
+  
+  .content ul li {
+      font-size: 90%;
+      text-align: left; 
+      list-style-type: none;
+      width:100%;
+      padding-right: 5%;
+      padding-left: 2%;
+  }
+  .content ul li h3{
+  color: rgb(235, 85, 16);
+  font-size: 100%;
+  } 
 }

@@ -7,21 +7,27 @@ body {
 }
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #e49696;
+  
+ }
+
+
+.logo{
+  width: 20%;
 }
 
-.topnav .logo {
+.logo img{
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  font-size: 1.5em;
+  max-width: 75%;
+  height: auto;
+  padding: 10px 10px 10px 30px;
 }
 .topnav .links{
   float:right;
   display: flex;
   flex-direction: row;
   padding-right: 4%;
+  padding-top: 1%;
 }
 .topnav .links a {
   display: block;
@@ -72,7 +78,21 @@ body {
   max-height: 300px; /* Adjust as needed */
 }
 
-
+.story .menulink  {
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+}
+.story .menulink:hover {
+  background-color: #ddd;
+  color: rgb(75, 31, 31);
+ }
 .menu {
   display: flex;
   flex-direction: column;
@@ -91,26 +111,9 @@ body {
 }
 
 .pic img {
-  width: 20%; /* Adjust as needed */
-}
-a.menulink {
-  text-align: center;
-  margin-bottom: 3%;
-  margin-top: 2%;
+  width: 23%; /* Adjust as needed */
 }
 
-a.menulink  {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 6px;
-}
-a.menulink:hover {
-  background-color: #ddd;
-  color: rgb(75, 31, 31);
- }
  .menulink {
   text-align: center;
   margin-bottom: 3%;
@@ -129,35 +132,48 @@ a.menulink:hover {
   background-color: #ddd;
   color: rgb(75, 31, 31);
  }
+
  .foot {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  flex-direction: row;
+    
+  }
   
+  .foot div {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .foot i {
+    margin-bottom: 6px; /* Adjust as needed */
+    font-size: 25px;
 }
 
-.foot div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
-.foot i {
-  margin-bottom: 6px; /* Adjust as needed */
-  font-size: 25px;
-}
 
 @media screen and (max-width: 650px) {
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
+  p{
+    font-size: 11px;
+  }
+  h2{
+    font-size: 13px;
+  }
   .logo {
     display: block;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 1.5em;
+    width: 80%;
+  }
+  .logo img{
+    float: center;
+    max-width: 60%;
+    height: auto;
+    padding-left: 30%;
   }
   
   .topnav {
@@ -165,22 +181,92 @@ a.menulink:hover {
     flex-direction: column;
   }
   .topnav .links{
-    background-color: #333;
+    background-color: #b38383;
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
+    padding-left: 3%;
   }
   .topnav .links a {
     float: center;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 20px 20px;
+    padding: 15px 20px;
     text-decoration: none;
+    font-size: 15px;
   }
   
   .topnav .links a:hover {
     background-color: #ddd;
     color: black;
   }
+  .mid img {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+    max-height: 250px; /* Adjust as needed */
+    object-fit: cover; /* This will make sure your image scales properly */
+  }
   
+  .mid .story {
+    flex: 2;
+    max-height: 250px; /* Adjust as needed */
+    padding-right: 2%;
+  }
+  
+  .story .menulink  {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 0.8%;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+  .menu .txt{
+    width: 95%;
+    padding-left: 1%;
+  }
+  .menulink {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 0.8%;
+  }
+  
+  .menulink a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+  }
+   .foot {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    padding-bottom: 1%;
+    }
+    
+    .foot div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      
+    }
+    
+    .foot i {
+      margin-bottom: 1%; /* Adjust as needed */
+      font-size: 15px;
+  }
+    .foot h4{
+    font-size: 10px;
+    }
+    .foot p{
+    font-size: 8px;
+    }
 }

@@ -135,7 +135,7 @@ body{
   flex:70%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
     *{
         margin:0;
         padding:0;
@@ -147,7 +147,9 @@ body{
         line-height: 20px;
         color:rgb(17, 3, 9);
     }
-    
+    p{
+      font-size: 12px;
+    }
     .logo {
       display: block;
       text-align: center;
@@ -163,14 +165,16 @@ body{
       background-color: #333;
       border-bottom: 1px solid #000;
       border-top: 1px solid #000;
+      padding-left: 3%;
     }
     .topnav .links a {
       float: center;
       display: block;
       color: #f2f2f2;
       text-align: center;
-      padding: 20px 20px;
+      padding: 15px 20px;
       text-decoration: none;
+      font-size: 15px;
     }
     
     .topnav .links a:hover {
@@ -180,14 +184,15 @@ body{
     .whole{
         width: 100%;
         margin: auto;
+        padding-bottom: 3%;
     }
     .title{
         text-align: center;
-        margin:60px;
+        margin:40px 20px 20px 20px;
     }
     .title h2{
         text-transform: capitalize;
-        font-size: 110%;
+        font-size: 100%;
         position: relative;
         display: inline-block;
         padding-bottom: 3%;
@@ -204,7 +209,7 @@ body{
         transform: translateX(-50%);
     }
     .title h3{
-        font-size: 98%;
+        font-size: 80%;
     }
     .menu{
         display: flex;
@@ -213,8 +218,8 @@ body{
     }
     .menu-column{
         width: 90%;
-        padding-right: 2%;
-        padding-left: 1%;
+        padding-right: 1%;
+        padding-left: 2%;
     }
     .menu-column h4{
         font-size: 90%;
@@ -231,8 +236,8 @@ body{
         bottom:0;
     }
     .single img{
-        width:50%;
-        height:50%;
+        width:40%;
+        height:40%;
         border-radius: 50%;
         padding: 3px;
         margin-right: 8%;
@@ -258,5 +263,23 @@ body{
     }
     .single .content p{
         font-size: 60%;
+    }
+    .menulinks{
+      float:center;
+      display: flex;
+      flex-direction: row;
+      padding-right: 4%;
+    }
+     .menulinks a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 5px 15px 5px 5px;
+      text-decoration: none;
+      font-size: 95%;
+      flex:1;
+    }
+    .foot p{
+      font-size: 10px;
     }
   }
