@@ -3,11 +3,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #164a41;
+  background-color: #739086;
 }
 .topnav {
   overflow: hidden;
-  background-color: #e49696;
+  background-color: #e4b0a2;
   
  }
 
@@ -31,7 +31,7 @@ body {
 }
 .topnav .links a {
   display: block;
-  color: #f2f2f2;
+  color: #fffffc;
   text-align: center;
   padding: 10px 30px;
   text-decoration: none;
@@ -85,7 +85,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #333;
+  background-color: #457373;
   color: #fff;
   border-radius: 6px;
 }
@@ -124,7 +124,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #333;
+  background-color: #457373;
   color: #fff;
   border-radius: 6px;
 }
@@ -181,24 +181,27 @@ body {
     flex-direction: column;
   }
   .topnav .links{
-    background-color: #b38383;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #000;
+    background-color: #e4b0a2;
+    border-bottom: 1px solid #757272;
+    border-top: 1px solid #757272;
     padding-left: 3%;
   }
   .topnav .links a {
     float: center;
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
     font-size: 15px;
   }
-  
-  .topnav .links a:hover {
-    background-color: #ddd;
-    color: black;
+  .hero{
+    height: 400px;
+  }
+  .hero-text h1{
+    font-size: 22px;
+  }
+  .hero-text p{
+    font-size: 18px;
   }
   .mid img {
     flex: 1;
@@ -220,7 +223,6 @@ body {
     display: inline-block;
     padding: 5px 10px;
     text-decoration: none;
-    background-color: #333;
     color: #fff;
     border-radius: 6px;
     font-size: 12px;
@@ -239,7 +241,6 @@ body {
     display: inline-block;
     padding: 5px 10px;
     text-decoration: none;
-    background-color: #333;
     color: #fff;
     border-radius: 6px;
     font-size: 12px;
