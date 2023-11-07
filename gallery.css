@@ -1,20 +1,20 @@
-
+*{
+  box-sizing: border-box;
+}
 body{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  background: #919f89;
 }
 
 .header-area {
-  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),url(images/f2.jpg);
+  
   background-position: center center;
   background-size: cover;
 }
 
 .navbar-area {
-  background: rgba(0,0,0,.6);
-  border-bottom: 1px solid #000;
+  background: linear-gradient(#e2b8ac, #cddad8);
 }
 .site-navbar {
   display: flex;
@@ -121,38 +121,43 @@ a.site-logo {
 }
 
   
-  .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
+.head {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 767px) {
   .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 5%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 25%;
-      max-width: 50%;
-    }
-  }
-  
+}
+
+
   
   
   
