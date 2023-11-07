@@ -310,7 +310,7 @@ a.site-logo {
     overflow: visible;
   }
   .intro-area h2 {
-    font-size: 36px;
+    font-size: 30px;
     margin-bottom: 15px;
   }  
   
@@ -405,10 +405,10 @@ h2{
 
 @media screen and (max-width: 767px) {
   p{
-    font-size: 11px;
+    font-size: 12px;
   }
   h2{
-    font-size: 13px;
+    font-size: 14px;
   }
   .mid {
     flex-direction: column-reverse;

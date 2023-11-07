@@ -341,5 +341,6 @@ a.site-logo {
   font-size: 100%;
   } 
 .toppart{
-  background-image: url(images/c2.jpg);
+  background-image: url(images/q2.jpg);
+  opacity: 0.5;
 }
