@@ -5,11 +5,11 @@
 }
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: trans sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  
+  background: #cddad8;
 }
 .container {
   width: 100%;
@@ -18,7 +18,7 @@ body{
   padding: 0 15px;
 }
 .header-area {
-  background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),url(images/f1.jpeg);
+  background: linear-gradient(#e2b8ac, rgba(49, 45, 45, 0.5)),url(images/c4.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -112,7 +112,7 @@ a.site-logo {
 }
 
 .footer-distributed{
-	background: #666;
+	background: #98a7ac;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -233,7 +233,7 @@ a.site-logo {
 	width: 20%;
 }
 
-.footer-distributed .{
+.footer-distributed {
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 13px;
@@ -332,43 +332,38 @@ a.site-logo {
 	}
 }
 
-
+h2{
+  font-style: oblique;
+}
 .mid {
   display: flex;
   justify-content: space-between;
+  margin-top: 1%;
+  
 }
 
 .mid img {
   flex: 1;
   margin-right: 20px; /* Adjust as needed */
   max-height: 300px; /* Adjust as needed */
-  object-fit: cover; /* This will make sure your image scales properly */
+  object-fit:scale-down; /* This will make sure your image scales properly */
+  border-radius: 4%;
 }
 
 .mid .story {
   flex: 2;
-  max-height: 300px; /* Adjust as needed */
+  max-height: 200px; 
+  margin-right: 20%;
+  margin-left: 10%;
 }
 
-.story .menulink  {
-  text-align: center;
-  margin-bottom: 3%;
-  margin-top: 2%;
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  background-color: #457373;
-  color: #fff;
-  border-radius: 6px;
-}
-.story .menulink:hover {
-  background-color: #ddd;
-  color: rgb(75, 31, 31);
- }
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .txt {
@@ -383,7 +378,8 @@ a.site-logo {
 }
 
 .pic img {
-  width: 23%; /* Adjust as needed */
+  width: 45%; 
+  border-radius: 6%;
 }
 
  .menulink {
@@ -396,7 +392,7 @@ a.site-logo {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: #457373;
+  background-color: #919f89;
   color: #fff;
   border-radius: 6px;
 }
@@ -407,48 +403,37 @@ a.site-logo {
 
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
+  p{
+    font-size: 11px;
+  }
+  h2{
+    font-size: 13px;
+  }
+  .mid {
+    flex-direction: column-reverse;
+  }
+
   .mid img {
-    flex: 1;
-    margin-right: 10px; /* Adjust as needed */
-    max-height: 250px; /* Adjust as needed */
-    object-fit: cover; /* This will make sure your image scales properly */
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    
   }
-  
+
   .mid .story {
-    flex: 2;
-    max-height: 250px; /* Adjust as needed */
-    padding-right: 2%;
+   width: 90%;
+   margin-left: 5%;
+   text-align: center;
   }
-  
-  .story .menulink  {
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 0.8%;
-    display: inline-block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 6px;
-    font-size: 12px;
+
+  .pic  {
+    display: flex;
+    flex-direction: column;
   }
-  .menu .txt{
-    width: 95%;
-    padding-left: 1%;
-  }
-  .menulink {
-    text-align: center;
-    margin-bottom: 2%;
-    margin-top: 0.8%;
-  }
-  
-  .menulink a {
-    display: inline-block;
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 6px;
-    font-size: 12px;
-  }
-   
+.pic img{
+  padding-top: 1%;
+  width: 96%;
+  margin-left: 2%;
+}
 }
