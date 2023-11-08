@@ -266,13 +266,13 @@ th, td {
     padding-right: 4%;
     border-top: 1px solid #444;
   }
-   .menulinks a {
+  .menulinks a {
     display: block;
     color: #9e4d4d;
     text-align: center;
     padding: 5px 15px 5px 10px;
     text-decoration: none;
-    font-size: 96%;
+    font-size: 100%;
     flex:1;
   }
   .whole{
