@@ -5,11 +5,11 @@
 }
 
 body{
-  font-family: trans sans;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  background: #cddad8;
+  background: #919f89;
 }
 .container {
   width: 100%;
@@ -273,10 +273,17 @@ a.site-logo {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 720px;
+    
   }
   /* navbar css for mobile start */
   .nav-toggler{
     display: block;
+  }
+  .header-area {
+    background: linear-gradient(#e2b8ac, rgba(49, 45, 45, 0.5)),url(images/c4.jpg);
+    background-position: center center;
+    background-size: cover;
+    max-height:700px ;
   }
   .site-navbar {
     min-height: 60px;
@@ -306,16 +313,21 @@ a.site-logo {
     background-color: rgba(255,255,255,.1);
   }
   .site-navbar ul.open {
-    max-height: 100vh;
+    max-height: 40vh;
     overflow: visible;
   }
+  .intro-area{
+    height: calc(100vh - 40vh);
+  }
   .intro-area h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 13px;
   }  
   
   .footer-distributed{
-		font: bold 14px sans-serif;
+		font: bold 12px sans-serif;
+    height: 50vh;
+    padding-top: 3%;
 	}
 
 	.footer-distributed .footer-left,
@@ -323,7 +335,7 @@ a.site-logo {
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 		text-align: center;
 	}
 
@@ -412,12 +424,14 @@ h2{
   }
   .mid {
     flex-direction: column-reverse;
+    margin-top: 6%;
   }
 
   .mid img {
-    margin-top: 2%;
+    margin-top: 6%;
     margin-right: 0;
     margin-bottom: 20px;
+    max-height: 200px;
     
   }
 
@@ -425,15 +439,20 @@ h2{
    width: 90%;
    margin-left: 5%;
    text-align: center;
+   font-style: italic;
+  }
+  .pic {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .pic img {
+    width: 80%; 
+    border-radius: 2%;
   }
 
-  .pic  {
-    display: flex;
-    flex-direction: column;
-  }
-.pic img{
-  padding-top: 1%;
-  width: 96%;
-  margin-left: 2%;
-}
-}
+  
+  
+ }
