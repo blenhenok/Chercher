@@ -365,8 +365,7 @@ h2{
 .mid .story {
   flex: 2;
   max-height: 200px; 
-  margin-right: 20%;
-  margin-left: 10%;
+  margin: 5%;
 }
 
 .menu {
