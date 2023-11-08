@@ -221,63 +221,67 @@ a.site-logo {
 
 @media screen and (max-width: 768px) {
     
-    .whole{
-      width: 100%;
-      margin:100px auto;
-    }
-    .title{
-      text-align: center;
-      margin:60px;
-    }
-    .title h2{
-      text-transform: capitalize;
-      font-size: 22px;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 8px;
-      margin-bottom: 10px;
-    }
-    .title h2::before{
-      content: '';
-      position: absolute;
-      width:80px;
-      height:2px;
-      background-color: aqua;
-      bottom:0;
-      left:50%;
-      transform: translateX(-50%);
-    }
-     .menulinks{
-      float:center;
-      display: flex;
-      flex-direction: row;
-      padding-left: 2%;
-      text-transform:capitalize;
-    }
-     .menulinks a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 0 2% 1.5% 3%;
-      text-decoration: none;
-      font-size: 17px;
-    }
-     
-    
+  .whole{
+    width: 100%;
+    margin: 3px auto;
+  }
+  .title{
+    text-align: center;
+    margin:40px;
+  }
+  .title h2{
+    text-transform: capitalize;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .title h3{
+    font-size: 15px;
+  }
+  .title h2::before{
+    content: '';
+    position: absolute;
+    width:80px;
+    height:2px;
+    background-color: aqua;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+  }
+   
+  
     .menu{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 5%;
+        margin-top: 1%;
+        
     }
     .menu-column{
         width: 90%;
-        padding-right: 2%;
-        padding-left: 1%;
+        padding-right: 1%;
+        padding-left: 2%;
     }
-    
+    .menu-column h4{
+        font-size: 90%;
+        font-weight: bolder;
+        position: relative;
+        padding-bottom: 1%;
+    }
+    .menu-column h4::before{
+        content: '';
+        position: absolute;
+        width:40px;
+        height:3px;
+        background-color: aqua;
+        bottom:0;
+    }
     .single img{
-        width:50%;
-        height:50%;
+        width:40%;
+        height:40%;
         border-radius: 50%;
         padding: 3px;
         margin-right: 8%;
@@ -302,10 +306,25 @@ a.site-logo {
         font-style: italic;
     }
     .single .content p{
-        font-size: 60%;
+        font-size: 70%;
     }
-    .foot{
-      font-size: 11px;
- 
+    .menulinks{
+      float:center;
+      display: flex;
+      flex-direction: row;
+      padding-right: 4%;
+      border-top: 1px solid #444;
+    }
+     .menulinks a {
+      display: block;
+      color: #9e4d4d;
+      text-align: center;
+      padding: 5px 15px 5px 10px;
+      text-decoration: none;
+      font-size: 95%;
+      flex:1;
+    }
+    .foot p{
+      font-size: 10px;
     }
   }

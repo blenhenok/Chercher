@@ -112,7 +112,7 @@ a.site-logo {
 }
 
 .footer-distributed{
-	background: #98a7ac;
+	background: #404142;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -326,7 +326,7 @@ a.site-logo {
   
   .footer-distributed{
 		font: bold 12px sans-serif;
-    height: 50vh;
+    height: 80%;
     padding-top: 3%;
 	}
 
@@ -436,8 +436,8 @@ h2{
   }
 
   .mid .story {
-   width: 90%;
-   margin-left: 5%;
+   width: 98%;
+   margin-left: 1%;
    text-align: center;
    font-style: italic;
   }
