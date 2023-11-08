@@ -251,8 +251,7 @@ a.site-logo {
     transform: translateX(-50%);
   }
    
-  
-    .menu{
+  .menu{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -321,7 +320,7 @@ a.site-logo {
       text-align: center;
       padding: 5px 15px 5px 10px;
       text-decoration: none;
-      font-size: 90%;
+      font-size: 88%;
       flex:1;
     }
     .foot p{
