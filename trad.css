@@ -176,6 +176,8 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: 3%;
+    margin-left: 2%;
 }
 .menu-column{
     width: 32%;
